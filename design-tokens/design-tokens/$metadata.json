@@ -1,0 +1,19 @@
+{
+  "tokenSetOrder": [
+    "primitives/globals",
+    "primitives/typography/default",
+    "primitives/colors/dark/global",
+    "primitives/colors/dark/digdir",
+    "primitives/colors/dark/altinn",
+    "primitives/colors/contrast/global",
+    "primitives/colors/contrast/digdir",
+    "primitives/colors/contrast/altinn",
+    "primitives/colors/light/global",
+    "primitives/colors/light/digdir",
+    "primitives/colors/light/altinn",
+    "themes/digdir",
+    "themes/altinn",
+    "semantic/color",
+    "semantic/style"
+  ]
+}

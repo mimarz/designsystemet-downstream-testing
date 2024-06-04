@@ -1,0 +1,59 @@
+[
+  {
+    "id": "c5fb5235-2a47-433a-aabc-4ed9ac51f713",
+    "name": "Dark",
+    "selectedTokenSets": {
+      "primitives/colors/dark/global": "enabled",
+      "primitives/colors/dark/digdir": "enabled",
+      "primitives/colors/dark/altinn": "enabled"
+    },
+    "group": "Mode"
+  },
+  {
+    "id": "733f9f12-33f4-43c1-a73e-d6d0f47f4a33",
+    "name": "Contrast",
+    "selectedTokenSets": {
+      "primitives/colors/contrast/global": "enabled",
+      "primitives/colors/contrast/digdir": "enabled",
+      "primitives/colors/contrast/altinn": "enabled"
+    },
+    "group": "Mode"
+  },
+  {
+    "id": "b0debe26-136a-4aee-a771-347d1ba38f38",
+    "name": "Light",
+    "selectedTokenSets": {
+      "primitives/colors/light/global": "enabled",
+      "primitives/colors/light/digdir": "enabled",
+      "primitives/colors/light/altinn": "enabled"
+    },
+    "group": "Mode"
+  },
+  {
+    "id": "bcab44d5-c5d4-4578-82e6-1955978e4f02",
+    "name": "Digdir",
+    "selectedTokenSets": {
+      "themes/digdir": "enabled"
+    },
+    "group": "Theme"
+  },
+  {
+    "id": "2f826735-a5ff-4610-b2dc-c2d8760264f7",
+    "name": "Altinn",
+    "selectedTokenSets": {
+      "themes/altinn": "enabled"
+    },
+    "group": "Theme"
+  },
+  {
+    "id": "0b2dc9af-52ea-4e73-8362-de6fce4fe23e",
+    "name": "Semantic",
+    "selectedTokenSets": {
+      "semantic/style": "enabled",
+      "semantic/color": "enabled",
+      "primitives/globals": "source",
+      "primitives/typography/default": "source"
+    },
+    "group": "Semantic"
+  }
+]
