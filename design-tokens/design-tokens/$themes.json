@@ -1,52 +1,63 @@
 [
   {
-    "id": "c5fb5235-2a47-433a-aabc-4ed9ac51f713",
+    "id": "36c74d80-902f-4fcb-9d55-aaaea7ce6643",
     "name": "Dark",
     "selectedTokenSets": {
       "primitives/colors/dark/global": "enabled",
-      "primitives/colors/dark/digdir": "enabled",
-      "primitives/colors/dark/altinn": "enabled"
+      "primitives/colors/dark/mobil": "enabled",
+      "primitives/colors/dark/intern": "enabled",
+      "primitives/colors/dark/front": "enabled"
     },
     "group": "Mode"
   },
   {
-    "id": "733f9f12-33f4-43c1-a73e-d6d0f47f4a33",
+    "id": "73d8d9f4-be0b-4e83-88f4-1d4924b432d5",
     "name": "Contrast",
     "selectedTokenSets": {
       "primitives/colors/contrast/global": "enabled",
-      "primitives/colors/contrast/digdir": "enabled",
-      "primitives/colors/contrast/altinn": "enabled"
+      "primitives/colors/contrast/mobil": "enabled",
+      "primitives/colors/contrast/intern": "enabled",
+      "primitives/colors/contrast/front": "enabled"
     },
     "group": "Mode"
   },
   {
-    "id": "b0debe26-136a-4aee-a771-347d1ba38f38",
+    "id": "ae448e23-dde7-4cbb-a0d6-1fe0b88f8a9e",
     "name": "Light",
     "selectedTokenSets": {
       "primitives/colors/light/global": "enabled",
-      "primitives/colors/light/digdir": "enabled",
-      "primitives/colors/light/altinn": "enabled"
+      "primitives/colors/light/mobil": "enabled",
+      "primitives/colors/light/intern": "enabled",
+      "primitives/colors/light/front": "enabled"
     },
     "group": "Mode"
   },
   {
-    "id": "bcab44d5-c5d4-4578-82e6-1955978e4f02",
-    "name": "Digdir",
+    "id": "855c8e49-5bc7-4156-bd5c-025abc11879b",
+    "name": "Mobil",
     "selectedTokenSets": {
-      "themes/digdir": "enabled"
+      "themes/mobil": "enabled"
     },
     "group": "Theme"
   },
   {
-    "id": "2f826735-a5ff-4610-b2dc-c2d8760264f7",
-    "name": "Altinn",
+    "id": "618684ea-4841-4a5b-ab25-73ef6ee1032e",
+    "name": "Intern",
     "selectedTokenSets": {
-      "themes/altinn": "enabled"
+      "themes/intern": "enabled"
     },
     "group": "Theme"
   },
   {
-    "id": "0b2dc9af-52ea-4e73-8362-de6fce4fe23e",
+    "id": "8f731df6-0fd2-45a9-9e4e-abd3d12ee1a3",
+    "name": "Front",
+    "selectedTokenSets": {
+      "themes/front": "enabled"
+    },
+    "group": "Theme"
+  },
+  {
+    "id": "93be4534-6687-419a-98c6-b3f4b0b6f6bd",
     "name": "Semantic",
     "selectedTokenSets": {
       "semantic/style": "enabled",

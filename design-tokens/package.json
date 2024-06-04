@@ -1,9 +1,9 @@
 {
-  "name": "design-tokens",
+  "name": "toll-design-tokens",
   "version": "1.0.0",
   "description": "CSS variables for @digdir/designsystemet",
   "type": "module",
-  "main": "dist/digdir/light.css",
+  "main": "dist/front/light.css",
   "files": [
     "dist"
   ],
