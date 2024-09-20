@@ -8,7 +8,7 @@ import {
   Textfield,
   Link,
   Button,
-  NativeSelect,
+  Select,
   Search,
   Table,
   Pagination,
@@ -32,7 +32,7 @@ export const Showcase: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
     <div className={cl(classes.body, className)} {...rest}>
       <div className={cl(classes.components)}>
         <div className={cl(classes.checkbox)}>
-          <Checkbox.Group error="" legend="Handleliste" size="small">
+          <Checkbox.Group error="" legend="Handleliste" size="sm">
             <Checkbox value="epost">En kilo poteter</Checkbox>
             <Checkbox value="telefon">To liter Farris</Checkbox>
             <Checkbox value="sms" checked>
@@ -46,61 +46,60 @@ export const Showcase: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
         <div data-ds-theme="light" className={classes.login}>
           <Heading
             className={cl(classes.cardTitle, classes.userTitle)}
-            size="xsmall"
+            size="xs"
           >
             Opprett ny bruker
           </Heading>
 
           <Textfield
             label="Navn"
-            size="small"
+            size="sm"
             placeholder="Ola Normann"
             className={classes.userField}
           />
           <Link href="#" className={classes.userLink}>
             Glemt passord?
           </Link>
-          <Button fullWidth size="small" className={classes.userBtn}>
+          <Button size="sm" className={classes.userBtn}>
             Opprett ny bruker
           </Button>
         </div>
         <div data-ds-theme="light" className={cl(classes.tableContainer)}>
-          <Heading className={classes.cardTitle} size="xxsmall">
+          <Heading className={classes.cardTitle} size="xs">
             Alle brukere
           </Heading>
           <div className={classes.tableHeader}>
             <div className={classes.tableAction}>
-              <NativeSelect
+              <Select
                 label=""
-                size="small"
+                size="sm"
                 className={classes.tableSelect}
               >
                 <option value="blank">Velg handling</option>
                 <option value="everest">Dupliser</option>
                 <option value="aconcagua">Slett</option>
                 <option value="denali">Oppdater</option>
-              </NativeSelect>
-              <Button className={classes.tableBtn} size="small">
+              </Select>
+              <Button className={classes.tableBtn} size="sm">
                 Utfør
               </Button>
             </div>
             <Search
-              error=""
               label="Label"
               placeholder="Søk etter bruker..."
-              size="small"
+              size="sm"
               variant="simple"
               className={classes.tableSearch}
             />
           </div>
-          <Table size="small" className={classes.table}>
+          <Table size="sm" className={classes.table}>
             <Table.Head>
               <Table.Row>
-                <Table.HeaderCell onClick={function Ya() {}} sortable>
+                <Table.HeaderCell onClick={function Ya() {}} sort="ascending">
                   Navn
                 </Table.HeaderCell>
                 <Table.HeaderCell>Epost</Table.HeaderCell>
-                <Table.HeaderCell onClick={function Ya() {}} sortable>
+                <Table.HeaderCell onClick={function Ya() {}} sort="ascending">
                   Telefon
                 </Table.HeaderCell>
               </Table.Row>
@@ -137,34 +136,34 @@ export const Showcase: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
             nextLabel="Neste"
             onChange={function Ya() {}}
             previousLabel="Forrige"
-            size="small"
+            size="sm"
             totalPages={6}
           />
         </div>
         <div className={cl(classes.help)}>
-          <Heading size="xsmall" className={classes.helpHeading}>
+          <Heading size="xs" className={classes.helpHeading}>
             Hva kan vi hjelpe deg med?
           </Heading>
           <div className={classes.helpCards}>
-            <Card color="first">
+            <Card color="brand1">
               <Card.Header className={classes.helpHeader}>
-                <Heading size="xxsmall">Sikkerhet og drift</Heading>
+                <Heading size="xs">Sikkerhet og drift</Heading>
               </Card.Header>
               <Card.Content className={cl(classes.helpContent)}>
                 Most provide as with carried business are much better more the.
               </Card.Content>
             </Card>
-            <Card color="second">
+            <Card color="brand2">
               <Card.Header className={classes.helpHeader}>
-                <Heading size="xxsmall">Skole og utdanning</Heading>
+                <Heading size="xs">Skole og utdanning</Heading>
               </Card.Header>
               <Card.Content className={cl(classes.helpContent)}>
                 Most provide as with carried business are much better more the.
               </Card.Content>
             </Card>
-            <Card color="third">
+            <Card color="brand3">
               <Card.Header className={classes.helpHeader}>
-                <Heading size="xxsmall">Mat og helse</Heading>
+                <Heading size="xs">Mat og helse</Heading>
               </Card.Header>
               <Card.Content className={cl(classes.helpContent)}>
                 Most provide as with carried business are much better more the.
@@ -173,57 +172,57 @@ export const Showcase: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
           </div>
         </div>
         <div className={classes.tags}>
-          <Heading size="xsmall">Emner</Heading>
+          <Heading size="xs">Emner</Heading>
           <div className={classes.tagList}>
-            <Tag color="first" size="small">
+            <Tag color="brand1" size="sm">
               Data og IKT
             </Tag>
-            <Tag color="second" size="small">
+            <Tag color="brand2" size="sm">
               Mat og ernæring
             </Tag>
-            <Tag color="third" size="small">
+            <Tag color="brand3" size="sm">
               Sport og Idrett
             </Tag>
-            <Tag color="neutral" size="small">
+            <Tag color="neutral" size="sm">
               Politikk og samfunn
             </Tag>
-            <Tag color="success" size="small">
+            <Tag color="success" size="sm">
               Utenriks
             </Tag>
-            {/* <Tag color="info" size="small">
+            {/* <Tag color="info" size="sm">
             Helse og velvære
           </Tag>
-          <Tag color="danger" size="small">
+          <Tag color="danger" size="sm">
             PC Gaming
           </Tag>
-          <Tag color="warning" size="small">
+          <Tag color="warning" size="sm">
             Trening og livsstil
           </Tag> */}
           </div>
         </div>
         <div className={classes.switches}>
           <Heading
-            size="xsmall"
+            size="xs"
             className={cl(classes.footerHeading, classes.switchHeading)}
           >
             Innstillinger
           </Heading>
-          <Paragraph size="small" className={classes.switchParagraph}>
+          <Paragraph size="sm" className={classes.switchParagraph}>
             Her kan du justere på innstillingene dine
           </Paragraph>
           <div className={classes.switchGroup}>
-            <Switch size="small">Desktopvisning</Switch>
-            <Switch size="small" checked>
+            <Switch size="sm">Desktopvisning</Switch>
+            <Switch size="sm" checked>
               Tabletvisning
             </Switch>
-            <Switch size="small">Mobilvisning</Switch>
+            <Switch size="sm">Mobilvisning</Switch>
           </div>
         </div>
         <div data-ds-theme="light" className={classes.radios}>
           <Radio.Group
             error=""
             legend="Hvilken iskremsmak er best?"
-            size="small"
+            size="sm"
             value={radioValue}
             onChange={(e) => setRadioValue(e)}
           >
@@ -234,14 +233,14 @@ export const Showcase: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
           </Radio.Group>
         </div>
         <div className={cl(classes.tabs)}>
-          <Tabs defaultValue="value1" size="small">
+          <Tabs.Root defaultValue="value1" size="sm">
             <Tabs.List>
               <Tabs.Tab value="value1">Min profil</Tabs.Tab>
               <Tabs.Tab value="value2">Tjenester</Tabs.Tab>
               <Tabs.Tab value="value3">Innstillinger</Tabs.Tab>
             </Tabs.List>
-          </Tabs>
-          <Paragraph size="small">
+          </Tabs.Root>
+          <Paragraph size="sm">
             For å kunne bli registrert i{" "}
             <Link href="#">Frivillighetsregisteret</Link>, må organisasjonen
             drive frivillig virksomhet. Det er bare foreninger,{" "}
@@ -253,14 +252,14 @@ export const Showcase: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
         </div>
 
         <div className={cl(classes.faq)}>
-          <Heading size="xsmall" className={classes.cardTitle}>
+          <Heading size="xs" className={classes.cardTitle}>
             Ofte stillte spørmsål
           </Heading>
-          <Accordion color="third" border className={classes.accordion}>
+          <Accordion color="brand3" border className={classes.accordion}>
             <Accordion.Item>
-              <Accordion.Header level={3}>
+              <Accordion.Heading>
                 Hvem kan registrere seg i Frivillighetsregisteret?
-              </Accordion.Header>
+              </Accordion.Heading>
               <Accordion.Content>
                 For å kunne bli registrert i Frivillighetsregisteret, må
                 organisasjonen drive frivillig virksomhet. Det er bare
@@ -270,9 +269,9 @@ export const Showcase: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
               </Accordion.Content>
             </Accordion.Item>
             <Accordion.Item>
-              <Accordion.Header level={3}>
+              <Accordion.Heading >
                 Hvordan går jeg fram for å registrere i Frivillighetsregisteret?
-              </Accordion.Header>
+              </Accordion.Heading>
               <Accordion.Content>
                 Virksomheten må være registrert i Enhetsregisteret før den kan
                 bli registrert i Frivillighetsregisteret. Du kan registrere i
@@ -280,9 +279,9 @@ export const Showcase: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
               </Accordion.Content>
             </Accordion.Item>
             <Accordion.Item>
-              <Accordion.Header level={3}>
+              <Accordion.Heading>
                 Hvordan går jeg fram for å registrere i Frivillighetsregisteret?
-              </Accordion.Header>
+              </Accordion.Heading>
               <Accordion.Content>
                 Virksomheten må være registrert i Enhetsregisteret før den kan
                 bli registrert i Frivillighetsregisteret. Du kan registrere i
